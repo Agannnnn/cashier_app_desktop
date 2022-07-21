@@ -1,0 +1,24 @@
+.btn {
+  -fx-background-color: #ffffff;
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+  -fx-background-color: rgb(50, 50, 50);
+  -fx-text-fill: #ffffff;
+  -border-radius: 0;
+}
+.border-big {
+  -fx-background-color: #ffffff;
+  -fx-border-color: rgb(50, 50, 50);
+  -fx-border-width: 4px;
+}
+.border-small {
+  -fx-background-color: #ffffff;
+  -fx-border-color: rgb(50, 50, 50);
+  -fx-border-width: 2px;
+}
+.nav {
+  -fx-background-color: rgb(50, 50, 50);
+  -fx-text-fill: #ffffff;
+}

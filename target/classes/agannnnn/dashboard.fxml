@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agannnnn.Dashboard">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #f2f2f2;" VBox.vgrow="ALWAYS">
+         <children>
+            <Pane prefHeight="63.0" prefWidth="600.0" styleClass="nav">
+               <children>
+                  <Text fx:id="companyName" fill="WHITE" layoutX="14.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAMA PERUSAHAAN">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="companyAddress" fill="WHITE" layoutX="314.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alamat Perusahaan" textAlignment="RIGHT" wrappingWidth="272.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="companyContact" fill="WHITE" layoutX="314.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kontak Perusahaan" textAlignment="RIGHT" wrappingWidth="272.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane fx:id="display" layoutX="144.0" layoutY="63.0" prefHeight="338.0" prefWidth="456.0" style="-fx-background-color: #fff;">
+               <children>
+                  <Label layoutX="163.0" layoutY="152.0" text="Tidak Ada Konten . . ." textFill="#363636">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="154.0" layoutY="171.0" text="Tekan salah satu tombol di kiri" textFill="#363636">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button layoutX="24.0" layoutY="75.0" mnemonicParsing="false" onAction="#kasirBtnHandler" prefHeight="70.0" prefWidth="140.0" text="Data Kasir">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="border-small" />
+                  <String fx:value="btn" />
+               </styleClass>
+            </Button>
+            <Button layoutX="24.0" layoutY="155.0" mnemonicParsing="false" onAction="#pesananBtnHandler" prefHeight="70.0" prefWidth="140.0" text="Data Pesanan">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="border-small" />
+                  <String fx:value="btn" />
+               </styleClass>
+            </Button>
+            <Button layoutX="23.0" layoutY="235.0" mnemonicParsing="false" onAction="#barangBtnHandler" prefHeight="70.0" prefWidth="140.0" text="Data Barang">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="border-small" />
+                  <String fx:value="btn" />
+               </styleClass>
+            </Button>
+            <Button layoutX="23.0" layoutY="316.0" mnemonicParsing="false" onAction="#pelangganBtnHandler" prefHeight="70.0" prefWidth="140.0" text="Data Pelanggan">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="border-small" />
+                  <String fx:value="btn" />
+               </styleClass>
+            </Button>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
